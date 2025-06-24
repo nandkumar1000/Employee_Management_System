@@ -237,7 +237,7 @@ export const setLocalStorage = () => {
 };
 
 export const getLocalStorage = () => {
-  console.log("Attempting to get localStorage data...");
+  // console.log("Attempting to get localStorage data...");
   const employeesData = localStorage.getItem('employees');
   const adminData = localStorage.getItem('Admin');
 
@@ -248,6 +248,6 @@ export const getLocalStorage = () => {
     employees: parsedEmployees,
     admin: parsedAdmin
   };
-  console.log("getLocalStorage returning:", result);
+  // console.log("getLocalStorage returning:", result);
   return result;
 };

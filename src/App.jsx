@@ -85,7 +85,7 @@ function App() {
 
   return (
     <>
-      {userRole === 'admin' && <AdminDashboard onLogout={handleLogout} />}
+      {userRole === 'admin' && <AdminDashboard data={loggedInUser} onLogout={handleLogout} />}
       {userRole === 'employees' && loggedInUser && (
         <EmployeeDashboard data={loggedInUser} onLogout={handleLogout} />
       )}

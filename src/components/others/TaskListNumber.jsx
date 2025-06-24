@@ -6,7 +6,7 @@ import {
   MdPauseCircleOutline
 } from 'react-icons/md';
 
-const TaskListNumber = () => {
+const TaskListNumber = ({ data }) => {
   return (
     <div className="flex flex-wrap justify-between gap-5 text-white">
       {/* In Progress */}
