@@ -230,7 +230,7 @@ const Admin = [
 ];
 
 export const setLocalStorage = () => {
-  console.log("Setting localStorage initial data...");
+  // console.log("Setting localStorage initial data...");
   localStorage.setItem('employees', JSON.stringify(employees));
   localStorage.setItem('Admin', JSON.stringify(Admin));
   console.log("localStorage initialized.");

@@ -5,6 +5,10 @@ import {
   MdCheckCircleOutline,
   MdAccessTime
 } from 'react-icons/md';
+import AcceptTask from './AcceptTasklist';
+import NewTask from './NewTask';
+import CompleteTask from './CompleteTask';
+import FailedTask from './FailedTask';
 
 const getStatusColor = (status) => {
   switch (status) {
@@ -23,6 +27,10 @@ const TaskList = ({ data }) => {
 
   return (
     <div className="h-[55%] overflow-x-auto flex justify-start items-stretch gap-4 w-full py-6 mt-10 flex-nowrap scrollbar-thin scrollbar-thumb-gray-400">
+      <AcceptTask></AcceptTask>
+      <NewTask></NewTask>
+      <CompleteTask></CompleteTask>
+      <FailedTask></FailedTask>
       {data.map((task, index) => {
         const status = task.completed
           ? 'Completed'
