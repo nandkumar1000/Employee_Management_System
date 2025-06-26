@@ -2,12 +2,14 @@ import React from 'react';
 import Header from '../others/Header';
 import TaskListNumber from '../others/TaskListNumber';
 import TaskList from '../TaskList/TaskList';
+import Navbar from '../Navbar';
 
 const EmployeeDashboard = ({ data, onLogout }) => {
   const tasks = Array.isArray(data?.tasks) ? data.tasks : [];
 
   return (
     <div className="p-10 bg-[#1c1c1c] h-screen overflow-y-auto">
+      <Navbar user={data} onLogout={onLogout} />
       {/* Header Section */}
       <Header data={data} onLogout={onLogout} />
 
